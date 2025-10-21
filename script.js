@@ -1,6 +1,6 @@
 const SITE = {
   name: "Bhavya Patel",
-  tagline: "CS student focused on data and human-centered AI.",
+  tagline: "CS student",
   major: "B.S. Computer Science",
   university: "Kent State University",
   location: "Kent, OH, USA",
@@ -25,13 +25,13 @@ const SITE = {
 
   projects: [
     {
-      title: "Doc2Video Pipeline",
+      title: "Doc2Video",
       pitch: "Converts PDFs/PPTs into narrated educational videos.",
       stack: ["Python", "FastAPI", "Docker", "FFmpeg"],
       bullets: [
         "Extracts text/visuals, generates script, synthesizes audio.",
         "Modular pipeline with logging & CLI.",
-        "Deployed on Linux; configurable durations."
+        "Deployed on Linux; configurable lengths."
       ],
       links: { github: "https://github.com/deadman-26", demo: "" },
       tags: ["AI", "Data"]
@@ -53,7 +53,7 @@ const SITE = {
       pitch: "Traceroute data visualizer and report generator.",
       stack: ["Python", "Pandas", "Matplotlib"],
       bullets: [
-        "Parses multiple traceroutes and computes stats.",
+        "Parses multiple traceroutes and computes statistics.",
         "Exports CSV and charts for reports.",
         "CLI + notebook workflows."
       ],
@@ -69,18 +69,18 @@ const SITE = {
       when: "Summer 2025",
       where: "Kent, OH",
       bullets: [
-        "Analyzed AI adoption in accounting firms using a checklist method.",
-        "Built reproducible pipelines and open-data artifacts."
+        "Correlated AI adoption in accounting firms with a checklist approach.",
+        "Developed reproducible pipelines and open-data artifacts."
       ]
     },
     {
-      role: "Culinary Services — Night Auditor",
+      role: "Culinary Services — Auditor",
       org: "Kent State",
       when: "2024 — Present",
       where: "Kent, OH",
       bullets: [
-        "Coordinated shift schedules and incident logs.",
-        "Improved nightly reconciliation time by ~15%."
+        "Maintained shift schedules and incident reports.",
+        "Improved daily reconciliation time by ~15%."
       ]
     }
   ],
@@ -89,13 +89,13 @@ const SITE = {
     {
       title: "Designing HCI-Friendly Student Portfolios",
       date: "2025-10-01",
-      summary: "Small choices (contrast, focus states) make big differences for accessibility.",
+      summary: "Small choices make big differences for accessibility.",
       tags: ["HCI","Accessibility"]
     },
     {
       title: "From PDFs to Videos: A Pipeline Story",
       date: "2025-09-15",
-      summary: "How a modular approach turns static documents into engaging explainers.",
+      summary: "How an AI model turns documents into engaging videos",
       tags: ["AI","Video"]
     }
   ]

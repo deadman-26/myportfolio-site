@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio • Bhavya Patel</title>
+  <meta name="description" content="Personal portfolio website showcasing projects, experience, and contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" id="brandName">Bhavya Patel</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="menubar" aria-label="Main menu">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+        <li role="none"><a role="menuitem" href="#blog">Blog</a></li>
+        <li role="none"><a class="btn btn-small" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- home -->
+    <section id="home" class="section hero reveal" aria-labelledby="homeTitle">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="homeTitle"><span id="heroName">Bhavya Patel</span></h1>
+          <p class="tagline" id="heroTagline">CS student focused on data and human-centered AI.</p>
+          <p class="hero-intro" id="heroIntro">I build human-centered tools that connect data and people. Welcome — explore projects, experience, and contact info below.</p>
+
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-secondary" id="cvLinkHero" href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
+          </div>
+
+          <ul class="meta" id="heroMeta" aria-hidden="false"></ul>
+          <div class="social" id="socialLinks" aria-label="Social links"></div>
+        </div>
+
+        <div class="hero-photo">
+          <img id="profilePhoto" src="assets/profile.jpg" alt="Profile photo of Bhavya Patel" loading="lazy" />
+        </div>
+      </div>
+
+      <button class="scroll-cue" aria-label="Scroll to About" id="scrollCue">⌄</button>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section reveal" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        <div class="about-left">
+          <h2 id="aboutTitle">About Me</h2>
+          <p id="aboutBio"></p>
+
+          <h3>Education</h3>
+          <ul class="timeline" id="eduTimeline"></ul>
+        </div>
+
+        <aside class="about-right" aria-labelledby="skillsTitle">
+          <h3 id="skillsTitle">Skills</h3>
+          <div class="badge-group" id="skillsBadges" role="list"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="section reveal" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="projectsTitle">Projects</h2>
+          <div class="filters" role="toolbar" aria-label="Project filters">
+            <button class="chip is-active" data-filter="All" aria-pressed="true">All</button>
+            <button class="chip" data-filter="Web" aria-pressed="false">Web</button>
+            <button class="chip" data-filter="Data" aria-pressed="false">Data</button>
+            <button class="chip" data-filter="AI" aria-pressed="false">AI</button>
+          </div>
+        </div>
+
+        <div class="grid cards" id="projectGrid" aria-live="polite" role="list"></div>
+      </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience" class="section reveal" aria-labelledby="expTitle">
+      <div class="container">
+        <h2 id="expTitle">Work Experience</h2>
+        <ul class="timeline" id="expTimeline"></ul>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section id="blog" class="section reveal" aria-labelledby="blogTitle">
+      <div class="container">
+        <h2 id="blogTitle">Blog</h2>
+        <div class="grid cards" id="blogGrid" role="list"></div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section reveal" aria-labelledby="contactTitle">
+      <div class="container">
+        <h2 id="contactTitle">Contact</h2>
+        <p>If you’d like to get in touch, use the button below:</p>
+        <p><a class="btn" id="mailtoBtn" href="#">Email Me</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <strong id="footerName">Bhavya Patel</strong>
+        <div id="footerMeta">B.S. Computer Science • Kent State University</div>
+      </div>
+      <div class="footer-links">
+        <a id="footerGit" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a id="footerLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+      <div class="footer-meta">
+        <span id="lastUpdated">Last updated: <span id="updatedDate"></span></span>
+        <div class="copyright">© <span id="copyrightYear"></span> <span id="footerNameCopy">Bhavya Patel</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
